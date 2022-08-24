@@ -1,9 +1,9 @@
 const splitString = require('../codewars/splitString');
 
-// describe("Split Strings", () => {
-//     it("Basic tests", () => {
-//       assert.deepEqual(solution("abcdef"), ["ab", "cd", "ef"]);
-//       assert.deepEqual(solution("abcdefg"), ["ab", "cd", "ef", "g_"]);
-//       assert.deepEqual(solution(""), []);
-//     });
-//   });
+test("testing normal happy path", () =>{
+    expect(splitStringsTest("abcd")).toStrictEqual(["ab","cd"]);
+})
+
+test("testing odd number of inputs happy path", () => {
+    expect(splitStringsTest("abc")).toStrictEqual(["ab","c_"]);
+})
