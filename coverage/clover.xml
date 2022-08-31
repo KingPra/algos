@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1660780048111" clover="3.2.0">
-  <project timestamp="1660780048111" name="All files">
-    <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="13" coveredelements="13" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
-    <file name="listFiltering.js" path="/Users/kingpra/Documents/codeAndCoffee/algorithms/codewars/listFiltering.js">
-      <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <line num="8" count="3" type="stmt"/>
-      <line num="9" count="3" type="stmt"/>
-      <line num="10" count="11" type="cond" truecount="2" falsecount="0"/>
-      <line num="11" count="5" type="stmt"/>
-      <line num="14" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="15" count="1" type="stmt"/>
-      <line num="17" count="2" type="stmt"/>
-      <line num="30" count="1" type="stmt"/>
+<coverage generated="1661978957505" clover="3.2.0">
+  <project timestamp="1661978957505" name="All files">
+    <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="15" coveredelements="15" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
+    <file name="arrayDiff.js" path="/Users/kingpra/Documents/codeAndCoffee/algorithms/codewars/arrayDiff.js">
+      <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="95" count="6" type="stmt"/>
+      <line num="96" count="6" type="stmt"/>
+      <line num="98" count="14" type="stmt"/>
+      <line num="100" count="14" type="stmt"/>
+      <line num="101" count="14" type="cond" truecount="2" falsecount="0"/>
+      <line num="102" count="6" type="stmt"/>
+      <line num="106" count="14" type="cond" truecount="2" falsecount="0"/>
+      <line num="107" count="8" type="stmt"/>
+      <line num="111" count="6" type="stmt"/>
+      <line num="116" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
