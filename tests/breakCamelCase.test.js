@@ -12,3 +12,15 @@ test('camelCasing should return camel Casing',() => {
 test('camelCasingTest shoulr return camel Casing Test', () => {
     expect(camelCaseTest('camelCasingTest')).toBe('camel Casing Test');
 })
+
+test('should return a string stating the error', () => {
+    expect(camelCaseTest(undefined)).toBe("input is not correct");
+})
+
+test('should return a string stating the error', () => {
+    expect(camelCaseTest(null)).toBe("input is not correct");
+})
+
+test('"" should return an empty string', () => {
+    expect(camelCaseTest("")).toBe("");
+})
