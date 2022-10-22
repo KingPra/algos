@@ -1,38 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1662595635422" clover="3.2.0">
-  <project timestamp="1662595635422" name="All files">
-    <metrics statements="29" coveredstatements="22" conditionals="19" coveredconditionals="14" methods="1" coveredmethods="1" elements="49" coveredelements="37" complexity="0" loc="29" ncloc="29" packages="1" files="1" classes="1"/>
-    <file name="extractTheDomain.js" path="/Users/kingpra/Documents/codeAndCoffee/algorithms/codewars/extractTheDomain.js">
-      <metrics statements="29" coveredstatements="22" conditionals="19" coveredconditionals="14" methods="1" coveredmethods="1"/>
-      <line num="22" count="8" type="cond" truecount="5" falsecount="0"/>
-      <line num="23" count="3" type="stmt"/>
-      <line num="26" count="5" type="stmt"/>
-      <line num="27" count="5" type="stmt"/>
-      <line num="28" count="5" type="stmt"/>
-      <line num="29" count="5" type="stmt"/>
-      <line num="30" count="5" type="stmt"/>
-      <line num="32" count="5" type="cond" truecount="1" falsecount="1"/>
-      <line num="33" count="5" type="stmt"/>
-      <line num="34" count="5" type="stmt"/>
-      <line num="35" count="69" type="stmt"/>
-      <line num="37" count="69" type="cond" truecount="4" falsecount="0"/>
-      <line num="38" count="5" type="stmt"/>
-      <line num="39" count="5" type="stmt"/>
-      <line num="42" count="64" type="cond" truecount="2" falsecount="0"/>
-      <line num="43" count="5" type="stmt"/>
-      <line num="44" count="5" type="cond" truecount="2" falsecount="0"/>
-      <line num="45" count="1" type="stmt"/>
-      <line num="47" count="5" type="stmt"/>
-      <line num="48" count="5" type="stmt"/>
-      <line num="52" count="0" type="stmt"/>
-      <line num="53" count="0" type="stmt"/>
-      <line num="54" count="0" type="stmt"/>
-      <line num="55" count="0" type="stmt"/>
-      <line num="57" count="0" type="cond" truecount="0" falsecount="4"/>
-      <line num="58" count="0" type="stmt"/>
-      <line num="59" count="0" type="stmt"/>
-      <line num="64" count="1" type="stmt"/>
-      <line num="65" count="1" type="stmt"/>
+<coverage generated="1666471401276" clover="3.2.0">
+  <project timestamp="1666471401276" name="All files">
+    <metrics statements="12" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1" elements="17" coveredelements="14" complexity="0" loc="12" ncloc="12" packages="1" files="1" classes="1"/>
+    <file name="binarySearch.js" path="/Users/kingpra/Documents/codeAndCoffee/algorithms/algos/binarySearch.js">
+      <metrics statements="12" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <line num="8" count="3" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="13" count="7" type="stmt"/>
+      <line num="14" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="15" count="3" type="stmt"/>
+      <line num="16" count="4" type="cond" truecount="1" falsecount="1"/>
+      <line num="17" count="4" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="22" count="0" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
