@@ -2,6 +2,7 @@
 //mergeSort = recursively divide array in 2, sort, re-combine
 // run-time complexity = O(n log n)
 // space complexity = O(n)
+// explanation video : https://www.youtube.com/watch?v=3j0SWDX4AtU
 
 function mergeSort(arr) {
     let length = arr.length;
