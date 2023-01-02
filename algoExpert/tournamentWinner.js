@@ -1,5 +1,5 @@
 //still wip
-
+console.log("WIP");
 // function tournamentWinner(competitions, results) {
 //     let outcome = new Map();
 //     let bestTeam = "test";
