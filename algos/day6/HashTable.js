@@ -1,3 +1,4 @@
+//https://linuxhint.com/javascript-hash-tables/
 class HashTable {
     constructor() {
         this.object = {};
