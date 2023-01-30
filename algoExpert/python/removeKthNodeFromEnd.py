@@ -1,7 +1,7 @@
 class LinkedList:
-    def __init__(self, value):
+    def __init__(self, value, next = None):
         self.value = value
-        self.next = None
+        self.next = next
 
 def length(node):
     if node is None:
@@ -25,8 +25,16 @@ def removeKthNodeFromEnd(head, k):
             counter -= 1
     return head
 
+def printList(head):
+    listToPrint = ''
+    while head.next:
+        listToPrint += f'{head.value}->'
+        head = head.next 
+    listToPrint += f'{head.value}'
+    print(listToPrint)
+
 # nodes = LinkedList(1, LinkedList(2, LinkedList(3, LinkedList(4, LinkedList(5))))) 
-nodes = LinkedList(1)
-nodes.next = LinkedList(2)
-print(removeKthNodeFromEnd(nodes, 2))
+nodes = LinkedList(1, LinkedList(2, LinkedList(3, LinkedList(4, LinkedList(5)))))
+removeKthNodeFromEnd(nodes, 2)
+printList(nodes)
   
