@@ -37,4 +37,7 @@ def printList(head):
 nodes = LinkedList(1, LinkedList(2, LinkedList(3, LinkedList(4, LinkedList(5)))))
 removeKthNodeFromEnd(nodes, 2)
 printList(nodes)
+
+p = set()
+p = [1, 2]
   
