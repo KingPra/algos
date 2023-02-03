@@ -28,21 +28,24 @@ class DoublyLinkedList:
                 curNode = curNode.next 
             node.prev = curNode
             curNode.next = node 
-            
+    ### need to fix ###       
     def insertBefore(self, node, nodeToInsert):
         if self.head is None:
             self.head = node 
             return
         curNode = self.head 
         while curNode:
-            if curNode.value == nodeToInsert:
-                node.next = curNode
-                node.prev = curNode.prev
-                curNode.prev = curNode
-                curNode = curNode.next
-                curNode.prev = node 
+            if curNode.value == node.value:
+                if curNode.prev is not None:
+                    prevNode = curNode.prev
+                    curNode.prev = nodeToInsert
+                    nodeToInsert.next = curNode
+                    prevNode.next = curNode              
+                    return
+                curNode.prev = nodeToInsert
+                nodeToInsert.next = curNode
                 return
-            curNode == curNode.next 
+            curNode = curNode.next 
 
     def insertAfter(self, node, nodeToInsert):
         if self.head is None:
@@ -83,8 +86,40 @@ class DoublyLinkedList:
     def remove(self, node):
         curNode = self.head 
         while curNode:
-            if curNode.value == node.value: 
-
+            if curNode.value == node.value:
+                lastNode = curNode.prev
+                lastNode.next = curNode.next 
+                curNode = curNode.next 
+                curNode.prev = lastNode
+                return
+            curNode = curNode.next 
+            
     def containsNodeWithValue(self, value):
-        # Write your code here.
-        pass
+        curNode = self.head 
+        while curNode:
+            if curNode.next.value == value:
+                return True
+        return False
+    
+    def print_list(self):
+        nodesStr = ''
+        curNode = self.head 
+        while curNode.next:
+            nodesStr += f'{curNode.value}->'
+            curNode = curNode.next 
+        nodesStr += curNode.value 
+        print(nodesStr)  
+            
+
+
+
+x = DoublyLinkedList()
+x.setHead(Node('A'))
+x.insertAfter(Node('B'), 'A')
+x.insertAfter(Node('C'), 'A')
+x.insertAfter(Node('D'), 'A')
+x.insertAfter(Node('E'), 'A')
+print(x.containsNodeWithValue('E'))
+x.insertBefore(Node('A'), Node('F'))
+x.print_list()
+
