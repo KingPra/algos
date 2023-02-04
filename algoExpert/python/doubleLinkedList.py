@@ -28,24 +28,53 @@ class DoublyLinkedList:
                 curNode = curNode.next 
             node.prev = curNode
             curNode.next = node 
-    ### need to fix ###       
+
     def insertBefore(self, node, nodeToInsert):
-        if self.head is None:
-            self.head = node 
-            return
         curNode = self.head 
         while curNode:
             if curNode.value == node.value:
-                if curNode.prev is not None:
-                    prevNode = curNode.prev
-                    curNode.prev = nodeToInsert
-                    nodeToInsert.next = curNode
-                    prevNode.next = curNode              
-                    return
+                prevNode = curNode.prev
                 curNode.prev = nodeToInsert
                 nodeToInsert.next = curNode
-                return
-            curNode = curNode.next 
+                if prevNode is not None:
+                    prevNode.next = nodeToInsert
+                    nodeToInsert.prev = prevNode
+            curNode = curNode.next
+    '''
+    [A-B-D-C-D-E-F] targ D, new node = W
+        c.prev = new node
+    p.next = new node 
+    nnode.next = c
+    nnode.pre = p
+        
+    '''
+    # ### need to fix ###       
+    # def insertBefore(self, node, nodeToInsert):
+    #     '''
+    #     if node exists
+    #     we need to insert nodeToInsert before the matched node
+    #     we need to capture the node prior to matched node as prevNode
+    #     we need to point node.prev to nodeToInsert
+    #     nodeToInsert.next should point to matched node
+    #     prevNode.next should point to nodetoInsert
+    #     '''
+    #     if self.head is None:
+    #         self.head = node 
+    #         return
+    #     curNode = self.head 
+    #     while curNode:
+    #         if curNode.value == node.value:
+    #             if curNode.prev is not None:
+    #                 prevNode = curNode.prev
+    #                 curNode.prev = nodeToInsert
+    #                 nodeToInsert.next = curNode
+    #                 nodeToInsert.prev = prevNode
+    #                 prevNode.next = curNode              
+    #                 return
+    #             curNode.prev = nodeToInsert
+    #             nodeToInsert.next = curNode
+    #             return
+    #         curNode = curNode.next 
 
     def insertAfter(self, node, nodeToInsert):
         if self.head is None:
@@ -119,7 +148,8 @@ x.insertAfter(Node('B'), 'A')
 x.insertAfter(Node('C'), 'A')
 x.insertAfter(Node('D'), 'A')
 x.insertAfter(Node('E'), 'A')
+x.print_list()
 print(x.containsNodeWithValue('E'))
-x.insertBefore(Node('A'), Node('F'))
+x.insertBefore(Node('B'), Node('F'))
 x.print_list()
 
